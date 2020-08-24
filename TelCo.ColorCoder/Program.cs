@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Drawing;
 
@@ -33,6 +33,16 @@ namespace TelCo.ColorCoder
                 return string.Format("MajorColor:{0}, MinorColor:{1}", majorColor.Name, minorColor.Name);
             }
         }
+        
+        public override string ToString()
+        {
+            string str = "";
+            for (int i = 1; i <= 25; i++) {
+                str = str + string.Format("PairNumber: {0}, {1}\n", i, Program.GetColorFromPairNumber(pairNumber).ToString());
+            }
+            return str;
+        }
+        
         /// <summary>
         /// Static constructor required to initialize static variable
         /// </summary>
