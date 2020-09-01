@@ -8,7 +8,7 @@ namespace TelCo.ColorCoder
     {
         private static int GetIndexMajor(Color color)
         {
-            index = -1;
+            int index = -1;
             for (int i = 0; i < colorMapMajor.Length; i++) {
                 if (colorMapMajor[i] == color) {
                     return i;
