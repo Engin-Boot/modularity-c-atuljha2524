@@ -10,11 +10,11 @@ namespace TelCo.ColorCoder
         {
             // Find the major color in the array and get the index
             int majorIndex = -1;
-            majorIndex = GetIndex(colorMapMajor, pair.majorColor);
+            majorIndex = GetIndexMajor(pair.majorColor);
 
             // Find the minor color in the array and get the index
             int minorIndex = -1;
-            minorIndex = GetIndex(colorMapMinor, pair.minorColor);
+            minorIndex = GetIndexMinor(pair.minorColor);
             // If colors can not be found throw an exception
             if (majorIndex == -1 || minorIndex == -1)
             {
