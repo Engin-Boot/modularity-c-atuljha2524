@@ -6,11 +6,11 @@ namespace TelCo.ColorCoder
 {
     partial class Program
     {
-        private static int GetIndex(Color[] colorMap, Color color)
+        private static int GetIndexMajor(Color color)
         {
             index = -1;
-            for (int i = 0; i < colorMap.length; i++) {
-                if (colorMap[i] == color) {
+            for (int i = 0; i < colorMapMajor.Length; i++) {
+                if (colorMapMajor[i] == color) {
                     return i;
                 }
             }
